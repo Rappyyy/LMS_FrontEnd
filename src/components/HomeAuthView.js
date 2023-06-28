@@ -1,7 +1,7 @@
 import React from 'react';
-import './HomePubView.css';
+import './HomeAuthView.css';
 
-function HomePubView() {
+function HomeAuthView() {
   return (
     <div className="container">
       <h1>Welcome to the<br />Assignment Review<br />App</h1>
@@ -27,4 +27,4 @@ function HomePubView() {
   );
 }
 
-export default HomePubView;
+export default HomeAuthView;
