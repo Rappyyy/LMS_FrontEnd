@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import './LoginForm.css';
 
-function LoginForm() {
-  function handleSubmit(e) {
+class LoginForm extends React.Component {
+  handleSubmit(e) {
     e.preventDefault();
 
     const username = e.target.username.value;
@@ -25,22 +25,24 @@ function LoginForm() {
       });
   }
 
-  return (
-    <div className="center">
-      <h1>Login</h1>
-      <form className="login-form" onSubmit={handleSubmit}>
-        <div className="txt_field">
-          <input type="text" name="username" required />
-          <label>Username</label>
-        </div>
-        <div className="txt_field">
-          <input type="password" name="password" required />
-          <label>Password</label>
-        </div>
-        <input className="login-button" type="submit" value="Login" />
-      </form>
-    </div>
-  );
+  render() {
+    return (
+      <div className="center">
+        <h1>Login</h1>
+        <form className="login-form" onSubmit={this.handleSubmit}>
+          <div className="txt_field">
+            <input type="text" name="username" required />
+            <label>Username</label>
+          </div>
+          <div className="txt_field">
+            <input type="password" name="password" required />
+            <label>Password</label>
+          </div>
+          <input className="login-button" type="submit" value="Login" />
+        </form>
+      </div>
+    );
+  }
 }
 
 export default LoginForm;
