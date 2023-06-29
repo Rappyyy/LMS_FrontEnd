@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './LoginForm.css';
 
 function LoginForm() {
   function handleSubmit(e) {
@@ -25,21 +26,19 @@ function LoginForm() {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <div style={{ position: 'relative', top: '-200px' }}>
-        <h1 style={{ textAlign: 'center' }}>LOGIN</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="username">Username: </label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required />
-          <br /><br />
-          <label htmlFor="password">Password: </label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
-          <br /><br />
-          <div style={{ textAlign: 'center' }}>
-            <input type="submit" value="LOGIN" />
-          </div>
-        </form>
-      </div>
+    <div className="center">
+      <h1>Login</h1>
+      <form className="login-form" onSubmit={handleSubmit}>
+        <div className="txt_field">
+          <input type="text" name="username" required />
+          <label>Username</label>
+        </div>
+        <div className="txt_field">
+          <input type="password" name="password" required />
+          <label>Password</label>
+        </div>
+        <input className="login-button" type="submit" value="Login" />
+      </form>
     </div>
   );
 }

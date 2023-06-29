@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background:white;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.txt_field input{
+    height: 40px;
+    font-size: 16px;
+} 
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.txt_field{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.center input {
+    margin-top: 20px;
+}
