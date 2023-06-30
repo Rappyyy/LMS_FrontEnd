@@ -47,15 +47,15 @@
 
   .needs-work {
     text-align: left;
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-left: 10px; 
   }
   .completed {
     text-align: left;
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-left: 10px; 
   }
   .In-review {
     text-align: left;
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-left: 10px; 
   }
   
   
