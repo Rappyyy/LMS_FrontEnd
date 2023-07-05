@@ -1,9 +1,9 @@
-import React from 'react';
-import axios from 'axios';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
-import './LoginForm.css';
+import React from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+import "./LoginForm.css";
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -16,23 +16,26 @@ function LoginForm() {
 
     const authData = {
       username: username,
-      password: password
+      password: password,
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', authData);
+      const response = await axios.post(
+        "http://localhost:8080/api/auth/login",
+        authData
+      );
       const token = response.headers.authorization;
-      console.log('Token:', response.data);
+      console.log("Token:", response.data);
       // Redirect to authenticated page after successful login
-      navigate('/Authenticated');
+      navigate("/Authenticated");
     } catch (error) {
       if (error.response && error.response.status === 401) {
-        toast.error('Unauthorized.');
+        toast.error("Unauthorized.");
       } else {
-        console.error('Login failed:', error.response);
+        console.error("Login failed:", error.response);
       }
     }
-  }
+  };
 
   return (
     <div className="center">

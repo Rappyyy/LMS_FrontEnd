@@ -1,11 +1,10 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import LoginForm from './components/LoginForm';
-import HomePubView from './components/HomePubView.js';
-import HomeAuthView from './components/HomeAuthView.js';
-import LearnerDashboard from './components/LearnerDashboard';
-import ReviewerDashboard from './components/ReviewerDashboard';
-
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
+import HomePubView from "./components/HomePubView.js";
+import HomeAuthView from "./components/HomeAuthView.js";
+import LearnerDashboard from "./components/LearnerDashboard";
+import ReviewerDashboard from "./components/ReviewerDashboard";
 
 function App() {
   return (
