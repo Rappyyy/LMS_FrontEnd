@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 function HomeAuthView() {
   return (
     <Container className="container">
-      <h1>
+      <h1 className="head-title">
         Welcome to the
         <br />
         Assignment Review
         <br />
         App
       </h1>
-      <hr />
+
       <Row className="box-container">
         <Col>
           <Row className="box">

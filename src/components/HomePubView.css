@@ -1,6 +1,7 @@
 .container {
   text-align: center;
-  position: relative;
+  min-height: 100vh;
+  margin-bottom: 200px;
 }
 
 body {
@@ -27,4 +28,5 @@ body {
 .login-button {
   border: 1px solid black;
   padding: 10px;
+  margin-top: 20px;
 }

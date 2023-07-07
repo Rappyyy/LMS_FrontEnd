@@ -1,7 +1,6 @@
 .container {
   text-align: center;
   position: relative;
-  border-bottom: 200px;
 }
 
 body {
@@ -20,6 +19,7 @@ body {
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
+  margin-bottom: 250px;
 }
 .center h1 {
   text-align: center;
