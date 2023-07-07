@@ -8,14 +8,14 @@ function LearnerDashboard() {
   return (
     <Container className="container">
       <Row>
-        <h1 className="learner">LEARNER DASHBOARD</h1>
+        <h1 className="learnerDashboard-header">LEARNER DASHBOARD</h1>
       </Row>
 
       <Row>
         <div className="header">
           <Button className="submit-button">Submit new assignment</Button>
-          <Link to="/authenticated" className="authenticate">
-            <Button className="authenticated">Logout</Button>
+          <Link to="/login" className="login">
+            <Button className="logout-button">Logout</Button>
           </Link>
         </div>
         <p>Welcome Learner</p>

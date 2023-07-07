@@ -1,24 +1,27 @@
 .container {
   text-align: center;
-  margin-bottom: 210px;
+  position: relative;
+}
+
+body {
+  background-image: url("../images/reviewapp-background.jpg");
+  background-size: cover;
+}
+
+.homepub-background {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .box-container {
+  background-color: aliceblue;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.box {
-  border: 1px solid black;
-  padding: 10px;
-  width: 300px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .login-button {
