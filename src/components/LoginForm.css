@@ -44,3 +44,12 @@ form {
 .center input {
   margin-top: 20px;
 }
+
+.login-button {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.login-button:hover {
+  background-color: #029fdc;
+}
