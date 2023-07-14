@@ -5,6 +5,7 @@ import HomePubView from "./components/HomePubView.js";
 import HomeAuthView from "./components/HomeAuthView.js";
 import LearnerDashboard from "./components/LearnerDashboard";
 import ReviewerDashboard from "./components/ReviewerDashboard";
+import RegisterForm from "./components/RegisterForm";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/authenticated" element={<HomeAuthView />} />
       <Route path="/LearnerDashboard" element={<LearnerDashboard />} />
       <Route path="/ReviewerDashboard" element={<ReviewerDashboard />} />
+      <Route path="/RegisterForm" element={<RegisterForm />} />
     </Routes>
   );
 }
