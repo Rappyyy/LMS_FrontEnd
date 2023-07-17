@@ -100,7 +100,7 @@ const RegisterForm = () => {
         </div>
 
         <button type="submit" className="register">
-          Register
+          Submit
         </button>
       </form>
       <ToastContainer />
