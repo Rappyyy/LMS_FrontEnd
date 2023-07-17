@@ -24,10 +24,16 @@ function LoginForm() {
         "http://localhost:8080/api/auth/login",
         authData
       );
-      const token = response.headers.authorization;
-      console.log("Token:", response.data);
+      const { token, userId, username, userType } = response.data;
+
+      // Store the user data in session storage
+      sessionStorage.setItem("token", token);
+      sessionStorage.setItem("userId", userId);
+      sessionStorage.setItem("username", username);
+      sessionStorage.setItem("userRole", userType);
+
       // Redirect to authenticated page after successful login
-      navigate("/Authenticated");
+      navigate("/authenticated");
     } catch (error) {
       if (error.response && error.response.status === 401) {
         toast.error("Unauthorized.");

@@ -55,8 +55,8 @@ class HomePubView extends React.Component {
               </Row>
             </Col>
           </Row>
-          <Link to="/login" className="login-link">
-            <Button className="login-button">Login</Button>
+          <Link to="/RegisterForm" className="Register-link">
+            <Button className="login-button">Register to Login</Button>
           </Link>
         </Container>
       </Container>

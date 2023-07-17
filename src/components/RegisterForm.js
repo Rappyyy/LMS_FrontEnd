@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const RegisterForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [role, setRole] = useState("ROLE_STUDENT"); // Default role
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,6 +31,11 @@ const RegisterForm = () => {
       );
 
       toast.success("Registered Succesfully!");
+      console.log(response);
+
+      if (response.status === 200) {
+        navigate("/RouteToLogin");
+      }
 
       // Clear the form fields after successful registration
       setUsername("");
@@ -35,9 +43,7 @@ const RegisterForm = () => {
       setConfirmPassword("");
       setRole("ROLE_STUDENT");
     } catch (error) {
-      console.log(
-        "Handle registration error, display appropriate error message"
-      );
+      console.log("Handle registration error!");
     }
   };
 

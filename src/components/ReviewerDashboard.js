@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LearnerDashboard.css";
+import { Link } from "react-router-dom";
 
 function ReviewerDashboard() {
   return (
@@ -10,7 +11,9 @@ function ReviewerDashboard() {
         <h1>Reviewer Dashboard</h1>
       </Row>
       <div className="header">
-        <Button className="logout-button">LOGOUT</Button>
+        <Link to="/login" className="login">
+          <Button className="logout-button">LOGOUT</Button>
+        </Link>
       </div>
       <p className="In-review">In review</p>
       <Row>

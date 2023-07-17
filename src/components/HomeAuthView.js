@@ -5,6 +5,18 @@ import "./HomeAuthView.css";
 import { Link } from "react-router-dom";
 
 function HomeAuthView() {
+  const userRole = sessionStorage.getItem("userRole"); // Retrieve the user role from session storage
+
+  const getDashboardLink = () => {
+    if (userRole === "ROLE_REVIEWER") {
+      return "/ReviewerDashboard";
+    } else if (userRole === "ROLE_STUDENT") {
+      return "/LearnerDashboard";
+    } else {
+      return "/"; // Default dashboard route for other user types or invalid user role
+    }
+  };
+
   return (
     <Container className="container">
       <h1 className="head-title">
@@ -53,10 +65,11 @@ function HomeAuthView() {
           </Row>
         </Col>
       </Row>
-      <Link to="/LearnerDashboard" className="learnerDashboard">
+      <Link to={getDashboardLink()} className="learnerDashboard">
         <Button className="login-button">Go to Dashboard</Button>
       </Link>
     </Container>
   );
 }
+
 export default HomeAuthView;
