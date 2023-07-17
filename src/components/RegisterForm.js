@@ -55,7 +55,6 @@ const RegisterForm = () => {
       <form onSubmit={handleSubmit} className="register-form">
         <div className="form-group">
           <label htmlFor="username">Username</label>
-
           <input
             type="text"
             id="username"
@@ -100,7 +99,9 @@ const RegisterForm = () => {
           </select>
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit" className="register">
+          Register
+        </button>
       </form>
       <ToastContainer />
     </div>
