@@ -1,6 +1,6 @@
-.container {
+.Learner-parent-container {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 500px;
 }
 
 .header {
@@ -19,6 +19,8 @@
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
+  text-align: left;
+  margin-left: 10px;
   /* width: 1500px; */
 }
 
@@ -43,21 +45,4 @@
   margin-top: 20px;
   margin-left: 70px;
   margin-bottom: 20px;
-}
-
-.needs-work {
-  text-align: left;
-  margin-left: 10px;
-}
-.completed {
-  text-align: left;
-  margin-left: 10px;
-}
-.In-review {
-  text-align: left;
-  margin-left: 10px;
-}
-
-.learnerDashboard-header {
-  margin-top: 150px;
 }
