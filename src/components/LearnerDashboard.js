@@ -3,6 +3,8 @@ import { Container, Row, Col, Button, Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LearnerDashboard.css";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 function LearnerDashboard() {
@@ -52,6 +54,7 @@ function LearnerDashboard() {
       console.log("Assignment created:", response.data);
 
       // Perform any necessary actions after successfully creating the assignment
+      toast.success("Successfully Created!");
 
       handleCloseModal();
     } catch (error) {
