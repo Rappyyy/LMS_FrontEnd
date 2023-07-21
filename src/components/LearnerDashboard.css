@@ -1,13 +1,12 @@
 .Learner-parent-container {
   text-align: center;
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 
 .box-container {
@@ -45,4 +44,8 @@
   margin-top: 20px;
   margin-left: 70px;
   margin-bottom: 20px;
+}
+
+.View {
+  width: 100%;
 }
